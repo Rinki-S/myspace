@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-home-page: rgb(252 161 185);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
