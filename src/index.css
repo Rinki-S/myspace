@@ -2,6 +2,18 @@
 
 @theme {
   --color-home-page: rgb(252 161 185);
+  --font-sans: "Funnel Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Outfit Variable", ui-sans-serif, system-ui, sans-serif;
+  --text-body: 1.125rem;
+  --text-body--line-height: 1.35;
+  --text-caption: 0.875rem;
+  --text-caption--line-height: 1.35;
+  --text-display: 4rem;
+  --text-display--line-height: 1;
+  --text-title: 2.5rem;
+  --text-title--line-height: 1.1;
+  --text-subtitle: 1.5rem;
+  --text-subtitle--line-height: 1.2;
 }
 
 html,
@@ -12,4 +24,37 @@ body,
 
 body {
   margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: var(--text-body--line-height);
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+  max-width: 70ch;
+  text-wrap: pretty;
+}
+
+small,
+figcaption {
+  font-size: var(--text-caption);
+  line-height: var(--text-caption--line-height);
 }

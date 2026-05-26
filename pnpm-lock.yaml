@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/funnel-sans':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource-variable/outfit':
+        specifier: ^5.2.8
+        version: 5.2.8
       react:
         specifier: ^19.2.6
         version: 19.2.6
@@ -165,6 +171,12 @@ packages:
   '@eslint/plugin-kit@0.7.1':
     resolution: {integrity: sha512-rZAP3aVgB9ds9KOeUSL+zZ21hPmo8dh6fnIFwRQj5EAZl9gzR7wxYbYXYysAM8CTqGmUGyp2S4kUdV17MnGuWQ==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  '@fontsource-variable/funnel-sans@5.2.8':
+    resolution: {integrity: sha512-HHicOhwA5IcF29JYO8koOUdVAePvp0Efi7dQ/TxY2WNW7cdE7ffRzw52GxKT3ksV/HShssYBFT5/etjFujEgtQ==}
+
+  '@fontsource-variable/outfit@5.2.8':
+    resolution: {integrity: sha512-4oUDCZx/Tcz6HZP423w/niqEH31Gks5IsqHV2ZZz1qKHaVIZdj2f0/S1IK2n8jl6Xo0o3N+3RjNHlV9R73ozQA==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -1228,6 +1240,10 @@ snapshots:
     dependencies:
       '@eslint/core': 1.2.1
       levn: 0.4.1
+
+  '@fontsource-variable/funnel-sans@5.2.8': {}
+
+  '@fontsource-variable/outfit@5.2.8': {}
 
   '@humanfs/core@0.19.2':
     dependencies:
