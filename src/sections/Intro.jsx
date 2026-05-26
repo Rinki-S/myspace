@@ -1,3 +1,4 @@
+import { IconArrowUpRight, IconBrandGithub } from '@tabler/icons-react'
 import { useEffect, useRef, useState } from 'react'
 import {
   CircleShape,
@@ -120,7 +121,29 @@ function Intro() {
         />
       </div>
       <p className="mt-3 text-body text-ink-muted text-pretty">
-        I build thoughtful interfaces with code, typography, and quiet details.
+        I&apos;m a software engineering student working toward frontend and
+        full-stack roles. I like turning rough ideas into useful products with
+        React, JavaScript, and Go, while also working on API integration, state
+        management, databases, and deployment. You can find more of my code on{' '}
+        <a
+          className="inline-flex items-baseline gap-1 text-ink underline decoration-ink/20 underline-offset-4 transition-colors duration-150 hover:decoration-ink/55 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"
+          href="https://github.com/Rinki-S"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <IconBrandGithub
+            aria-hidden="true"
+            className="relative top-0.5 size-4 shrink-0"
+            stroke={1.8}
+          />
+          GitHub
+          <IconArrowUpRight
+            aria-hidden="true"
+            className="relative top-0.5 size-4 shrink-0"
+            stroke={1.8}
+          />
+        </a>
+        .
       </p>
     </section>
   )
