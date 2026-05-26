@@ -98,6 +98,11 @@ figcaption {
   height: var(--intro-shape-size);
 }
 
+.intro-pattern span {
+  width: var(--intro-shape-size);
+  height: var(--intro-shape-size);
+}
+
 .intro-pattern__left-top {
   grid-column: 1;
   grid-row: 1;
@@ -126,6 +131,11 @@ figcaption {
 .intro-pattern__right-end {
   grid-column: 5;
   grid-row: 1;
+}
+
+.intro-pattern__right-empty {
+  grid-column: 4;
+  grid-row: 2;
 }
 
 .intro-pattern__right-bottom {
