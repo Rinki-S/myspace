@@ -81,8 +81,56 @@ figcaption {
   line-height: var(--text-caption--line-height);
 }
 
-.intro-title {
-  font-family: var(--font-sans);
+.intro-pattern {
+  --intro-shape-size: clamp(0.875rem, 0.75rem + 0.55vw, 1.125rem);
+  display: grid;
+  width: max-content;
+  grid-template-columns:
+    repeat(2, var(--intro-shape-size))
+    calc(var(--intro-shape-size) / 2)
+    repeat(2, var(--intro-shape-size));
+  grid-auto-rows: var(--intro-shape-size);
+  gap: 0;
+}
+
+.intro-pattern svg {
+  width: var(--intro-shape-size);
+  height: var(--intro-shape-size);
+}
+
+.intro-pattern__left-top {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.intro-pattern__left-right {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.intro-pattern__left-bottom {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.intro-pattern__left-end {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.intro-pattern__right-top {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.intro-pattern__right-end {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.intro-pattern__right-bottom {
+  grid-column: 5;
+  grid-row: 2;
 }
 
 .contributions-label,
