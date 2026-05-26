@@ -2,6 +2,13 @@
 
 @theme {
   --color-home-page: rgb(252 161 185);
+  --color-ink: rgb(40 24 32);
+  --color-ink-muted: rgb(110 65 82);
+  --color-heatmap-empty: rgb(255 218 228);
+  --color-heatmap-low: rgb(243 137 166);
+  --color-heatmap-mid: rgb(219 84 124);
+  --color-heatmap-high: rgb(164 44 87);
+  --color-heatmap-peak: rgb(95 21 53);
   --font-sans: "Funnel Sans Variable", ui-sans-serif, system-ui, sans-serif;
   --font-heading: "Outfit Variable", ui-sans-serif, system-ui, sans-serif;
   --text-body: 1.125rem;
