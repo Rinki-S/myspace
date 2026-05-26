@@ -1,3 +1,5 @@
+import { Folder } from 'pixelarticons/react/Folder'
+import SectionTitle from './SectionTitle'
 import daoCard from './assets/dao-card.svg'
 import gitChunkedStoreCard from './assets/git-chunked-store-card.svg'
 
@@ -23,12 +25,9 @@ const projects = [
 function Projects() {
   return (
     <section className="mt-10" aria-labelledby="projects-title">
-      <h2
-        id="projects-title"
-        className="section-label mb-3 text-caption text-ink-muted"
-      >
+      <SectionTitle icon={Folder} id="projects-title">
         WHAT I&apos;M WORKING ON
-      </h2>
+      </SectionTitle>
       <ul className="grid gap-4 sm:grid-cols-2">
         {projects.map((project) => (
           <li key={project.href}>

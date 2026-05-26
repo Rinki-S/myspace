@@ -14,7 +14,7 @@
   --color-opening-shape: oklch(0.934 0.028 6.665);
   --color-ink: oklch(0.233 0.029 348.178);
   --color-ink-muted: oklch(0.434 0.066 356.04);
-  --color-heatmap-empty: oklch(0.910 0.044 3.759);
+  --color-heatmap-empty: oklch(0.956 0.018 3.759);
   --color-heatmap-low: oklch(0.846 0.074 3.797);
   --color-heatmap-mid: oklch(0.759 0.115 3.512);
   --color-heatmap-high: oklch(0.652 0.158 2.115);
@@ -85,7 +85,8 @@ figcaption {
   font-family: var(--font-sans);
 }
 
-.contributions-label {
+.contributions-label,
+.section-label {
   font-family: var(--font-mono);
 }
 
@@ -94,9 +95,17 @@ figcaption {
   overflow: hidden;
 }
 
-.github-heatmap article,
+.github-heatmap article {
+  width: 100% !important;
+}
+
 .github-heatmap svg {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.project-card {
+  border-radius: 0.5rem;
 }
 
 .opening-pattern {

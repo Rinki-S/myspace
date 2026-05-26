@@ -1,5 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { GitCommitSharp } from 'pixelarticons/react/GitCommitSharp'
 import { GitHubCalendar } from 'react-github-calendar'
+import SectionTitle from './SectionTitle'
 
 const GITHUB_USERNAME = 'Rinki-S'
 
@@ -13,11 +15,8 @@ const theme = {
   ],
 }
 
-const fullYearColumns = 53
-const halfYearColumns = 27
 const gap = 3
-const minBlockSize = 3
-const maxBlockSize = 18
+const blockSize = 12
 const smallScreenQuery = '(max-width: 640px)'
 
 function getRecentMonthsData(data, months) {
@@ -29,11 +28,7 @@ function getRecentMonthsData(data, months) {
 }
 
 function GithubHeatmap() {
-  const containerRef = useRef(null)
-  const [blockSize, setBlockSize] = useState(12)
   const [isSmallScreen, setIsSmallScreen] = useState(false)
-  const columns = isSmallScreen ? halfYearColumns : fullYearColumns
-  const heatmapWidth = columns * blockSize + gap * (columns - 1)
 
   useEffect(() => {
     const media = window.matchMedia(smallScreenQuery)
@@ -45,57 +40,32 @@ function GithubHeatmap() {
     return () => media.removeEventListener('change', updateScreen)
   }, [])
 
-  useEffect(() => {
-    const container = containerRef.current
-    if (!container) return undefined
-
-    const updateSize = () => {
-      const availableWidth = container.getBoundingClientRect().width
-      const nextBlockSize = Math.floor(
-        (availableWidth - gap * (columns - 1)) / columns,
-      )
-
-      setBlockSize(Math.max(minBlockSize, Math.min(maxBlockSize, nextBlockSize)))
-    }
-
-    updateSize()
-
-    const observer = new ResizeObserver(updateSize)
-    observer.observe(container)
-
-    return () => observer.disconnect()
-  }, [columns])
-
   return (
     <section className="w-full" aria-label="GitHub contribution heatmap">
-      <h2 className="contributions-label mb-3 text-caption text-ink-muted">
+      <SectionTitle icon={GitCommitSharp}>
         MY CONTRIBUTIONS
-      </h2>
-      <div className="github-heatmap" ref={containerRef}>
-        <div style={{ width: heatmapWidth }}>
-          <GitHubCalendar
-            blockMargin={gap}
-            blockRadius={Math.max(1, Math.floor(blockSize * 0.25))}
-            blockSize={blockSize}
-            colorScheme="light"
-            fontSize={0}
-            hideColorLegend
-            hideMonthLabels
-            hideTotalCount
-            hideWeekdayLabels
-            showColorLegend={false}
-            showMonthLabels={false}
-            showTotalCount={false}
-            showWeekdayLabels={false}
-            theme={theme}
-            transformData={
-              isSmallScreen
-                ? (data) => getRecentMonthsData(data, 6)
-                : undefined
-            }
-            username={GITHUB_USERNAME}
-          />
-        </div>
+      </SectionTitle>
+      <div className="github-heatmap">
+        <GitHubCalendar
+          blockMargin={gap}
+          blockRadius={Math.max(1, Math.floor(blockSize * 0.25))}
+          blockSize={blockSize}
+          colorScheme="light"
+          fontSize={0}
+          hideColorLegend
+          hideMonthLabels
+          hideTotalCount
+          hideWeekdayLabels
+          showColorLegend={false}
+          showMonthLabels={false}
+          showTotalCount={false}
+          showWeekdayLabels={false}
+          theme={theme}
+          transformData={(data) =>
+            getRecentMonthsData(data, isSmallScreen ? 6 : 9)
+          }
+          username={GITHUB_USERNAME}
+        />
       </div>
     </section>
   )
