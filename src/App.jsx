@@ -1,4 +1,5 @@
 import Contact from './Contact'
+import Footer from './Footer'
 import GithubHeatmap from './GithubHeatmap'
 import Intro from './Intro'
 import OpeningPattern from './OpeningPattern'
@@ -15,6 +16,7 @@ function App() {
         <Projects />
         <TechStack />
         <Contact />
+        <Footer />
       </div>
     </main>
   )
