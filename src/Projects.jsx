@@ -1,14 +1,13 @@
 import { Folder } from 'pixelarticons/react/Folder'
 import SectionTitle from './SectionTitle'
-import daoCard from './assets/dao-card.svg'
-import gitChunkedStoreCard from './assets/git-chunked-store-card.svg'
 
 const projects = [
   {
     description:
       'An AI-native, local-first workspace for developer growth, bringing projects, tasks, notes, search, and long-term engineering context into one calm desktop app.',
     href: 'https://github.com/Rinki-S/dao',
-    image: daoCard,
+    image:
+      'https://raw.githubusercontent.com/Rinki-S/dao/main/apps/web/src/assets/hero.png',
     language: 'JavaScript',
     name: 'Rinki-S/dao',
   },
@@ -16,7 +15,8 @@ const projects = [
     description:
       'An experimental Git storage backend that splits large files into 64KB SHA-256 chunks with compression, deduplication, clean/smudge filters, fsck, stats, and GC.',
     href: 'https://github.com/Rinki-S/git-chunked-store',
-    image: gitChunkedStoreCard,
+    image:
+      'https://raw.githubusercontent.com/Rinki-S/git-chunked-store/main/docs/assets/logo.svg',
     language: 'Go',
     name: 'Rinki-S/git-chunked-store',
   },
@@ -39,7 +39,7 @@ function Projects() {
             >
               <img
                 alt=""
-                className="aspect-video w-full object-cover"
+                className="aspect-video w-full bg-white/25 object-contain p-4"
                 src={project.image}
               />
               <span className="block p-4">
