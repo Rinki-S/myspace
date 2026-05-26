@@ -79,7 +79,7 @@ function Intro() {
   }
 
   return (
-    <section className="mb-10" aria-label="Introduction">
+    <section aria-label="Introduction">
       <div
         className="intro-pattern text-home-page"
         aria-hidden="true"

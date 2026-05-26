@@ -4,7 +4,7 @@ import { technologies } from '../data/tech-stack'
 
 function TechStack() {
   return (
-    <section className="mt-10" aria-labelledby="techstack-title">
+    <section aria-labelledby="techstack-title">
       <SectionTitle icon={Cpu} id="techstack-title">
         TECHSTACK
       </SectionTitle>

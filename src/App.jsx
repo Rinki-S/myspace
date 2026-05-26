@@ -16,7 +16,7 @@ function App() {
       <div className="relative z-10 mx-auto max-w-173 px-6 py-24 leading-relaxed sm:py-48">
         {sections.map((Section, index) => (
           <div
-            className="section-reveal"
+            className="page-section section-reveal"
             key={Section.name}
             style={{ "--section-delay": `${sectionRevealDelays[index]}s` }}
           >

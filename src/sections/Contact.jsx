@@ -4,7 +4,7 @@ import { contacts } from '../data/contacts'
 
 function Contact() {
   return (
-    <section className="mt-10" aria-labelledby="contact-title">
+    <section aria-labelledby="contact-title">
       <SectionTitle icon={MailRight} id="contact-title">
         GET IN TOUCH WITH ME
       </SectionTitle>

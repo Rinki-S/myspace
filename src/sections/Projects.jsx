@@ -4,7 +4,7 @@ import { projects } from '../data/projects'
 
 function Projects() {
   return (
-    <section className="mt-10" aria-labelledby="projects-title">
+    <section aria-labelledby="projects-title">
       <SectionTitle icon={Folder} id="projects-title">
         WHAT I&apos;M WORKING ON
       </SectionTitle>
