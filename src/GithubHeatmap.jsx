@@ -68,8 +68,11 @@ function GithubHeatmap() {
 
   return (
     <section className="w-full" aria-label="GitHub contribution heatmap">
+      <h2 className="contributions-label mb-3 text-caption text-ink-muted">
+        MY CONTRIBUTIONS
+      </h2>
       <div className="github-heatmap" ref={containerRef}>
-        <div className="mx-auto" style={{ width: heatmapWidth }}>
+        <div style={{ width: heatmapWidth }}>
           <GitHubCalendar
             blockMargin={gap}
             blockRadius={Math.max(1, Math.floor(blockSize * 0.25))}

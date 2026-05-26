@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Departure Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("./assets/fonts/departure-mono/DepartureMono-Regular.woff2")
+    format("woff2");
+}
+
 @theme {
   --color-home-page: oklch(0.806 0.111 2.754);
   --color-opening-shape: oklch(0.934 0.028 6.665);
@@ -12,6 +21,7 @@
   --color-heatmap-peak: oklch(0.525 0.162 1.949);
   --font-sans: "Funnel Sans Variable", ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-sans);
+  --font-mono: "Departure Mono", ui-monospace, monospace;
   --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   --text-body--line-height: 1.35;
   --text-caption: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
@@ -73,6 +83,10 @@ figcaption {
 
 .intro-title {
   font-family: var(--font-sans);
+}
+
+.contributions-label {
+  font-family: var(--font-mono);
 }
 
 .github-heatmap {
