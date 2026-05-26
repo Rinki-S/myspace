@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { GitCommitSharp } from 'pixelarticons/react/GitCommitSharp'
 import { GitHubCalendar } from 'react-github-calendar'
-import SectionTitle from './SectionTitle'
+import SectionTitle from '../components/SectionTitle'
 
 const GITHUB_USERNAME = 'Rinki-S'
 

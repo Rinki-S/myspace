@@ -1,10 +1,10 @@
-import Contact from './Contact'
-import Footer from './Footer'
-import GithubHeatmap from './GithubHeatmap'
-import Intro from './Intro'
 import OpeningPattern from './OpeningPattern'
-import Projects from './Projects'
-import TechStack from './TechStack'
+import Contact from './sections/Contact'
+import Footer from './sections/Footer'
+import GithubHeatmap from './sections/GithubHeatmap'
+import Intro from './sections/Intro'
+import Projects from './sections/Projects'
+import TechStack from './sections/TechStack'
 
 const sections = [
   Intro,
