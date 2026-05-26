@@ -13,15 +13,37 @@ const theme = {
   ],
 }
 
-const columns = 53
+const fullYearColumns = 53
+const halfYearColumns = 27
 const gap = 3
 const minBlockSize = 3
 const maxBlockSize = 18
+const smallScreenQuery = '(max-width: 640px)'
+
+function getRecentMonthsData(data, months) {
+  const now = new Date()
+  const cutoff = new Date(now)
+  cutoff.setMonth(cutoff.getMonth() - months)
+
+  return data.filter((activity) => new Date(activity.date) >= cutoff)
+}
 
 function GithubHeatmap() {
   const containerRef = useRef(null)
   const [blockSize, setBlockSize] = useState(12)
+  const [isSmallScreen, setIsSmallScreen] = useState(false)
+  const columns = isSmallScreen ? halfYearColumns : fullYearColumns
   const heatmapWidth = columns * blockSize + gap * (columns - 1)
+
+  useEffect(() => {
+    const media = window.matchMedia(smallScreenQuery)
+    const updateScreen = () => setIsSmallScreen(media.matches)
+
+    updateScreen()
+    media.addEventListener('change', updateScreen)
+
+    return () => media.removeEventListener('change', updateScreen)
+  }, [])
 
   useEffect(() => {
     const container = containerRef.current
@@ -42,7 +64,7 @@ function GithubHeatmap() {
     observer.observe(container)
 
     return () => observer.disconnect()
-  }, [])
+  }, [columns])
 
   return (
     <section className="w-full" aria-label="GitHub contribution heatmap">
@@ -63,6 +85,11 @@ function GithubHeatmap() {
             showTotalCount={false}
             showWeekdayLabels={false}
             theme={theme}
+            transformData={
+              isSmallScreen
+                ? (data) => getRecentMonthsData(data, 6)
+                : undefined
+            }
             username={GITHUB_USERNAME}
           />
         </div>
