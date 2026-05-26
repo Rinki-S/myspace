@@ -5,8 +5,8 @@ export const projects = [
     href: 'https://github.com/Rinki-S/dao',
     image:
       'https://raw.githubusercontent.com/Rinki-S/dao/main/apps/web/src/assets/hero.png',
-    language: 'JavaScript',
-    name: 'Rinki-S/dao',
+    name: 'dao',
+    techStack: ['Electron', 'React', 'JavaScript', 'Tailwind CSS', 'shadcn/ui', 'Zod', 'Vite'],
   },
   {
     description:
@@ -14,7 +14,7 @@ export const projects = [
     href: 'https://github.com/Rinki-S/git-chunked-store',
     image:
       'https://raw.githubusercontent.com/Rinki-S/git-chunked-store/main/docs/assets/logo.svg',
-    language: 'Go',
-    name: 'Rinki-S/git-chunked-store',
+    name: 'git-chunked-store',
+    techStack: ['Go', 'Git'],
   },
 ]
