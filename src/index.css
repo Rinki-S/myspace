@@ -214,10 +214,11 @@ figcaption {
     forwards;
 }
 
-.animate-content-reveal {
+.section-reveal {
   opacity: 0;
   transform: translateY(0.75rem);
-  animation: content-reveal 220ms ease-out 4.76s forwards;
+  animation: content-reveal 280ms cubic-bezier(0.16, 1, 0.3, 1)
+    var(--section-delay) forwards;
 }
 
 @keyframes opening-tile-pop {
@@ -262,7 +263,7 @@ figcaption {
   .opening-pattern__fill,
   .opening-pattern__tile,
   .opening-pattern,
-  .animate-content-reveal {
+  .section-reveal {
     animation-duration: 1ms;
     animation-delay: 0ms;
   }
