@@ -11,9 +11,6 @@ importers:
       '@fontsource-variable/funnel-sans':
         specifier: ^5.2.8
         version: 5.2.8
-      '@fontsource-variable/outfit':
-        specifier: ^5.2.8
-        version: 5.2.8
       '@uiw/react-heat-map':
         specifier: ^2.3.3
         version: 2.3.3(@babel/runtime@7.29.2)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
@@ -208,9 +205,6 @@ packages:
 
   '@fontsource-variable/funnel-sans@5.2.8':
     resolution: {integrity: sha512-HHicOhwA5IcF29JYO8koOUdVAePvp0Efi7dQ/TxY2WNW7cdE7ffRzw52GxKT3ksV/HShssYBFT5/etjFujEgtQ==}
-
-  '@fontsource-variable/outfit@5.2.8':
-    resolution: {integrity: sha512-4oUDCZx/Tcz6HZP423w/niqEH31Gks5IsqHV2ZZz1qKHaVIZdj2f0/S1IK2n8jl6Xo0o3N+3RjNHlV9R73ozQA==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -1326,8 +1320,6 @@ snapshots:
   '@floating-ui/utils@0.2.11': {}
 
   '@fontsource-variable/funnel-sans@5.2.8': {}
-
-  '@fontsource-variable/outfit@5.2.8': {}
 
   '@humanfs/core@0.19.2':
     dependencies:

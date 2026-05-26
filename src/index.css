@@ -11,16 +11,16 @@
   --color-heatmap-high: oklch(0.652 0.158 2.115);
   --color-heatmap-peak: oklch(0.525 0.162 1.949);
   --font-sans: "Funnel Sans Variable", ui-sans-serif, system-ui, sans-serif;
-  --font-heading: "Outfit Variable", ui-sans-serif, system-ui, sans-serif;
-  --text-body: 1.125rem;
+  --font-heading: var(--font-sans);
+  --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   --text-body--line-height: 1.35;
-  --text-caption: 0.875rem;
+  --text-caption: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
   --text-caption--line-height: 1.35;
-  --text-display: 4rem;
+  --text-display: clamp(2rem, 1.2rem + 4vw, 4rem);
   --text-display--line-height: 1;
-  --text-title: 2.5rem;
+  --text-title: clamp(1.75rem, 1.45rem + 1.5vw, 2.5rem);
   --text-title--line-height: 1.1;
-  --text-subtitle: 1.5rem;
+  --text-subtitle: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
   --text-subtitle--line-height: 1.2;
 }
 
@@ -69,6 +69,10 @@ small,
 figcaption {
   font-size: var(--text-caption);
   line-height: var(--text-caption--line-height);
+}
+
+.intro-title {
+  font-family: var(--font-sans);
 }
 
 .github-heatmap {
