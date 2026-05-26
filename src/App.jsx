@@ -11,7 +11,7 @@ const sectionRevealDelays = [4.76, 4.84, 4.99, 5.22, 5.53, 5.92];
 
 function App() {
   return (
-    <main className="relative min-h-dvh overflow-hidden bg-home-page text-ink">
+    <main className="relative min-h-dvh overflow-hidden text-ink">
       <OpeningPattern />
       <div className="relative z-10 mx-auto max-w-173 px-6 py-24 leading-relaxed sm:py-48">
         {sections.map((Section, index) => (
