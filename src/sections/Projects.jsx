@@ -20,7 +20,7 @@ function Projects() {
               <span className="flex aspect-video min-h-0 items-center justify-center bg-white/25 p-4 sm:absolute sm:inset-y-0 sm:left-0 sm:w-[32%] sm:aspect-auto">
                 <img
                   alt=""
-                  className="max-h-full max-w-full object-contain"
+                  className="block h-4/5 w-4/5 min-h-0 min-w-0 object-contain"
                   src={project.image}
                 />
               </span>
