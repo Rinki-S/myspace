@@ -4,7 +4,7 @@ export const projects = [
       'An AI-native, local-first workspace for developer growth, bringing projects, tasks, notes, search, and long-term engineering context into one calm desktop app.',
     href: 'https://github.com/Rinki-S/dao',
     image:
-      'https://raw.githubusercontent.com/Rinki-S/dao/main/apps/web/src/assets/hero.png',
+      'https://raw.githubusercontent.com/Rinki-S/dao/refs/heads/feat/product-shell/apps/desktop/electron/assets/dao-iOS-Default-1024x1024%401x.png',
     name: 'dao',
     techStack: ['Electron', 'React', 'JavaScript', 'Tailwind CSS', 'shadcn/ui', 'Zod', 'Vite'],
   },
