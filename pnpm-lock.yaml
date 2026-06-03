@@ -16,7 +16,7 @@ importers:
         version: 3.44.0(react@19.2.6)
       '@uiw/react-heat-map':
         specifier: ^2.3.3
-        version: 2.3.3(@babel/runtime@7.29.2)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+        version: 2.3.4(@babel/runtime@7.29.2)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       developer-icons:
         specifier: ^7.0.0
         version: 7.0.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
@@ -35,6 +35,9 @@ importers:
       react-github-calendar:
         specifier: ^5.0.6
         version: 5.0.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      tech-stack-icons:
+        specifier: ^3.7.1
+        version: 3.7.1(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -505,8 +508,8 @@ packages:
   '@types/react@19.2.15':
     resolution: {integrity: sha512-eRwcGNHve+E8qtEQSSRl6urh+rFop4v8gm6O8rGv25CodbvFdLjA1vVQ1KkiFE0w0UPOnb8tDiFKL5lp0rtY5Q==}
 
-  '@uiw/react-heat-map@2.3.3':
-    resolution: {integrity: sha512-PMQ2v7am2yWCXNJcNz6OpbJmb3m6zNxf8NaRvPdCiRtF1NU58JJoGfkmEgXSjopNuu5eg8sBYX/VPC1Of8C0QQ==}
+  '@uiw/react-heat-map@2.3.4':
+    resolution: {integrity: sha512-E5kEtPXQKEHmYKtRsnlmu1kqBX43NIxMGWGz7rtXwOp0KCA0WFCh1w+WM2CalwAPWYKpptNpjqIB8wo7XyiLzg==}
     peerDependencies:
       '@babel/runtime': '>=7.10.0'
       react: '>=16.9.0'
@@ -1077,6 +1080,12 @@ packages:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
     engines: {node: '>=6'}
 
+  tech-stack-icons@3.7.1:
+    resolution: {integrity: sha512-5BAWrYxK75zFVVS2ZQZCttQn0EW5dw8CtvMLYYYHIV1Mqhiog8pxWZtUF8uxXHp3b7l9g+YTkTyv6jQUzrCTMA==}
+    peerDependencies:
+      react: ^18.2.0 || ^19.0.0
+      react-dom: ^18.2.0 || ^19.0.0
+
   tinyglobby@0.2.16:
     resolution: {integrity: sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==}
     engines: {node: '>=12.0.0'}
@@ -1565,7 +1574,7 @@ snapshots:
     dependencies:
       csstype: 3.2.3
 
-  '@uiw/react-heat-map@2.3.3(@babel/runtime@7.29.2)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
+  '@uiw/react-heat-map@2.3.4(@babel/runtime@7.29.2)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@babel/runtime': 7.29.2
       react: 19.2.6
@@ -2070,6 +2079,11 @@ snapshots:
   tailwindcss@4.3.0: {}
 
   tapable@2.3.3: {}
+
+  tech-stack-icons@3.7.1(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
+    dependencies:
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
 
   tinyglobby@0.2.16:
     dependencies:
